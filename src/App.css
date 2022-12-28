@@ -1,38 +1,95 @@
+body {
+  background-color: black;
+  letter-spacing: 3px;
+  font-family: cursive;
+}
+
+input_wrapper:focus,
+input:focus {
+  outline: none;
+}
+
 .App {
+  background-color: rgb(37, 35, 35);
+  margin: auto;
+  margin: 2% 9% 4% 9%;
+  height: 40%;
+  border: rgb(249, 249, 249) 2px solid;
+  border-radius: 10px;
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  margin: auto;
+}
+.input_wrapper {
+  height: 60px;
+  width: 75%;
+  font-size: 20px;
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.add_button {
+  background-color: orange;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  height: 68px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.todo_input {
+  padding: 20px;
+  height: 80px;
+  margin: auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo_list {
+  display: block;
+  margin: 1% 10% 1% 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  width: 80%;
+  list-style-type: none;
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 15px;
+  color: rgb(247, 246, 246);
+  padding: 5px;
+  border-left: yellow 5px solid;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.101);
+}
+.delete_button {
+  background-color: red;
+  border: 0px;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 160px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 600;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.complete_button {
+  background-color: green;
+  border: 0px;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.empty {
+  color: rgb(255, 234, 0);
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 50px;
 }
